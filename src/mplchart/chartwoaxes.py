@@ -245,6 +245,8 @@ class Chart:
         else:
             ax = self.get_axes()
 
+        ax.set_axis_off()
+
         return ax
 
     def default_pane(self, indicator):
@@ -318,6 +320,7 @@ class Chart:
             )
 
         self.config_axes(ax)
+        ax.set_axis_off()
 
         return ax
 
