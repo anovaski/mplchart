@@ -222,6 +222,7 @@ class Chart:
 
         ax = self.layout.init_vplot(self.figure)
         self.config_axes(ax, root=True)
+        ax.set_axis_off()
 
     def root_axes(self):
         """returns root axes, usualy axes[0]"""
